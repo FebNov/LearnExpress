@@ -12,6 +12,11 @@ app.get("/", (req, res) => {
   res.send("hello");
 });
 
+//get all people
+app.get("/people", (req, res) => {
+  return res.json(posts);
+});
+
 app.listen(3000, () => {
   console.log("listen 3000 Port");
 });
